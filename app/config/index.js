@@ -9,7 +9,6 @@ const configMap = {
   dev,
   pre,
   pro
-}
-
+};
 
 module.exports = Object.assign(base, configMap[env]);

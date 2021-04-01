@@ -1,5 +1,5 @@
-const koaRouter = require('koa-router');
-const router = new koaRouter();
+const KoaRouter = require('koa-router');
+const router = new KoaRouter();
 
 const routeList = require('./routes');
 const paramValidator = require('../middlewares/paramValidator');

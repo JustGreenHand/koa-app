@@ -1,4 +1,4 @@
-const assert = require('assert')
+const assert = require('assert');
 
 const throwError = (code, message) => {
   const err = new Error(message);
@@ -9,4 +9,4 @@ const throwError = (code, message) => {
 module.exports = {
   assert,
   throwError
-}
+};

@@ -1,0 +1,38 @@
+env:
+  node: true
+  mocha: true
+
+extends: standard
+
+parserOptions:
+  ecmaVersion: 8
+  sourceType: 'module'
+  ecmaFeatures:
+    js: true
+    experimentalObjectRestSpread: true
+
+rules:
+  array-bracket-spacing: [2, 'always']
+  curly: 1
+  handle-callback-err: 1
+  prefer-arrow-callback: 2
+  no-unused-expressions: 1
+  indent: ['error', 2, { 'SwitchCase': 1 }]
+  max-len: ['error', { 'code': 160, 'tabWidth': 2 }]
+  quotes: [2, 'single']
+  camelcase: [1, { 'properties': 'never', 'ignoreDestructuring': true }]
+  no-var: 2
+  no-console: 2
+  no-unused-vars: 1
+  no-cond-assign: 2
+  no-return-assign: 2
+  no-param-reassign: 2
+  no-inline-comments: 2
+  no-trailing-spaces: 2
+  eqeqeq: 2
+  brace-style: 2
+  key-spacing: 2
+  semi-spacing: 2
+  semi: [2, 'always']
+  keyword-spacing: 2
+  space-infix-ops: 2

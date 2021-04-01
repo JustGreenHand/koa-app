@@ -6,6 +6,6 @@ module.exports = {
   logConfig: {
     flag: true,
     outDir: `${pwd}/app/public/log`,
-    level: 'info',
+    level: 'info'
   }
-}
+};

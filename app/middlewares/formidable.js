@@ -3,7 +3,7 @@ const Formidable = require('formidable');
 module.exports = () => {
   return async function (ctx, next) {
     const form = new Formidable({
-      multiples: true, 
+      multiples: true,
       //  上传的临时文件保存路径
       uploadDir: ctx.config.tempFilePath
     });

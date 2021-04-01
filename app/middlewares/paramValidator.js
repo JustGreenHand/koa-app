@@ -10,7 +10,7 @@ module.exports = paramSchema => {
     const paramMap = {
       router: ctx.request.params,
       query: ctx.request.query,
-      body,
+      body
     };
 
     if (!paramSchema) return next();
@@ -26,7 +26,7 @@ module.exports = paramSchema => {
       });
 
       if (validResult.error) {
-        ctx.utils.assert(false, ctx.utils.throwError(9998, validResult.error.message))
+        ctx.utils.assert(false, ctx.utils.throwError(9998, validResult.error.message));
       }
     });
     await next();

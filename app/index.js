@@ -2,13 +2,13 @@ const Koa = require('koa');
 const compose = require('koa-compose');
 
 const MD = require('./middlewares/');
-const config = require('./config')
-const utils = require('./common/utils')
+const config = require('./config');
+const utils = require('./common/utils');
 
 const app = new Koa();
 
-const port = '8082'
-const host = '0.0.0.0'
+const port = '8082';
+const host = '0.0.0.0';
 
 app.context.config = config;
 app.context.utils = utils;

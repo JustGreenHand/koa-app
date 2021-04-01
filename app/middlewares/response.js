@@ -4,7 +4,7 @@ const response = () => {
       ctx.body = {
         code,
         data,
-        msg,
+        msg
       };
     };
 
@@ -12,7 +12,7 @@ const response = () => {
       ctx.body = {
         code: 0,
         data: ctx.body,
-        msg: msg || 'success',
+        msg: msg || 'success'
       };
     };
 
