@@ -18,6 +18,7 @@ module.exports = paramSchema => {
     const schemaKeys = Object.getOwnPropertyNames(paramSchema);
     if (!schemaKeys.length) return next();
 
+    // eslint-disable-next-line array-callback-return
     schemaKeys.some(item => {
       const validObj = paramMap[item];
 

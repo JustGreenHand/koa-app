@@ -1,5 +1,5 @@
 const { test } = require('../controllers');
-const { scmTest } = require('../schema/index')
+const { scmTest } = require('../schema/index');
 
 const routes = [
   {
