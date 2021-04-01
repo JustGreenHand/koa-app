@@ -1,6 +1,3 @@
-const assert = require('assert');
-const Joi = require('@hapi/joi');
-
 module.exports = paramSchema => {
   return async function (ctx, next) {
     let body = ctx.request.body;
